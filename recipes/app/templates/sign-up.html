@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    {% block head %}
+    <head>
+        <link href="{{url_for('static', filename='login.css')}}" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    {% endblock %}
+    {% block content %}
+    <body>
+        <div class="container">
+            <div class="signup-parent">
+                <div class="signup">
+                    <h1>Sign up</h1>
+                    <h2>Email</h2>
+                    <form>
+                    </form>
+                    <h2>Username</h2>
+                    <form>
+                    </form>
+                    <h2>Password</h2>
+                    <form>
+                    </form>
+                    <button>Sign up</button>
+                    <div class="login-text">
+                        <p>Already a user?</p>
+                        <h3>LOGIN</h3>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </body>
+    {% endblock %}
+</html>
